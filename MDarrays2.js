@@ -33,37 +33,62 @@
 // ];
 
 // matrixPrimeCheck(N, M, arr);
+// 
 
+// function sumOfCornerColumns(N, M, arr) {
+//     let sum = 0;
 
-function vowelsInRows(N, M, arr) {
-    // Iterate over each row
-    for (let i = 0; i < N; i++) {
-        let vowels = "aeiou"; // Define vowels
-        let flag = false; // Initialize flag for each row
+//     // Iterate through each row
+//     for (let i = 0; i < N; i++) {
+//         // Add the first column element (j = 0)
+//         sum += arr[i][0];
 
-        // Check each element in the row
-        for (let j = 0; j < M; j++) {
-            if (vowels.includes(arr[i][j])) {
-                flag = true; // Set flag to true if a vowel is found
-                break; // Stop checking further in the same row
-            }
-        }
+//         // Add the last column element (j = M - 1), if it's different from the first column
+//         if (M > 1) {
+//             sum += arr[i][M - 1];
+//         }
+//     }
 
-        // Print "Yes" if a vowel was found, otherwise "No"
-        if (flag) {
-            console.log("Yes");
-        } else {
-            console.log("No");
-        }
-    }
-}
+//     console.log(sum); // Print the total sum
+// }
 
-// Example usage:
-const N = 3, M = 4;
-const arr = [
-    ['b', 'c', 'd', 'e'],  // Contains 'e' -> Yes
-    ['f', 'g', 'h', 'i'],  // Contains 'i' -> Yes
-    ['j', 'k', 'l', 'm']   // No vowels -> No
-];
+// // Example input
+// const N = 4, M = 3;
+// const arr = [
+//     [1, 2, 3],   // Row 1
+//     [4, 5, 6],   // Row 2
+//     [7, 8, 9],   // Row 3
+//     [10, 11, 12] // Row 4
+// ];
 
-vowelsInRows(N, M, arr);
+// // Call the function with example input
+// sumOfCornerColumns(N, M, arr);
+
+// function sumOfCornerColumns(N, M, arr) {
+//     let sum = 0;
+
+//     // Iterate through each row
+//     for (let i = 0; i < N; i++) {
+//         // Add the first column element (j = 0)
+//         sum += arr[i][0];
+
+//         // Add the last column element (j = M - 1), if it's different from the first column
+//         if (M > 1) {
+//             sum += arr[i][M - 1];
+//         }
+//     }
+
+//     console.log(sum); // Print the total sum
+// }
+
+// // Example input
+// const N = 4, M = 3;
+// const arr = [
+//     [1, 2, 3],   // Row 1
+//     [4, 5, 6],   // Row 2
+//     [7, 8, 9],   // Row 3
+//     [10, 11, 12] // Row 4
+// ];
+
+// // Call the function with example input
+// sumOfCornerColumns(N, M, arr);
