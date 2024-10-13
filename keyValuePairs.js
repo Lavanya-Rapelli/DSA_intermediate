@@ -9,3 +9,4 @@ function countOccurrences(arr) {
 
 console.log(countOccurrences([1, 2, 2, 3, 3, 3]));  
 // Output: { '1': 1, '2': 2, '3': 3 }
+
